@@ -1,0 +1,330 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  /* color: #426696; */
+  color: white;
+  font-weight: 600;
+  font-size: 3rem;
+  opacity: 0.8;
+}
+h2,
+
+p {
+  color: white;
+  font-weight: 550;
+  opacity: 0.8;
+  -webkit-background-clip: text
+  text-fill-color: transparent
+}
+
+h3 {
+  color: white;
+  font-weight: 600;
+  opacity: 0.8;
+  -webkit-background-clip: text
+  text-fill-color: transparent
+}
+
+a {
+  text-decoration: none;
+}
+
+a:link {
+  color: white;
+}
+
+/* visited link */
+a:visited {
+  color: white;
+}
+
+/* mouse over link */
+a:hover {
+  color: #f4a384;
+}
+
+/* selected link */
+a:active {
+  color: lightgrey;
+}
+
+main {
+  font-family: "Poppins", sans-serif;
+  min-height: 100vh;
+  /* background: linear-gradient(to right top, #4568DC, #B06AB3); */
+  /* background: linear-gradient(to right top, #FC466B, #3F5EFB); */
+  /*background: linear-gradient(to right top, #2980B9, #6DD5FA, #FFFFFF); */
+  /* background: linear-gradient(to right top, #ED4264, #FFEDBC); */
+  /* background: linear-gradient(to right top, #77A1D3, #79CBCA, #E684AE); */
+  /* background: linear-gradient(to right top, #FEAC5E, #C779D0, #4BC0C8); */
+  /* background: linear-gradient(to right top, #fc00ff, #00dbde) */
+  background: linear-gradient(to right top, #FF5F6D, #FFC371);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cutout {
+  background-color: #18191A;
+  min-height: 80vh;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  width: 60%;
+  border-radius: 2rem;
+  z-index: 2;
+  backdrop-filter: blur(2rem);
+  display: flex;
+  box-shadow: 6px 6px 20px rgba(122, 122, 122, 0.212);
+}
+
+.socials {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  text-align: center;
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0.3)
+  );
+  border-radius: 2rem;
+}
+.link {
+  display: flex;
+  margin: 2rem 0rem;
+  padding: 1rem 5rem;
+  align-items: center;
+}
+.link h2 {
+  padding: 0rem 2rem;
+}
+
+.skills {
+  flex: 2;
+}
+
+.pro {
+  background: linear-gradient(to right top, #FF5F6D, #FFC371);
+  border-radius: 2rem;
+  color: white;
+  padding: 0.75rem;
+  position: relative;
+}
+
+.pro img {
+  position: absolute;
+  top: -5%;
+  right: -5%;
+}
+
+.pro h2 {
+  width: 50%;
+  color: white;
+  font-weight: 560;
+}
+
+.title {
+  margin-bottom: 3rem;
+}
+
+.title input {
+  background: linear-gradient(to right top, #FF5F6D, #FFC371);
+  border: none;
+  width: 50%;
+  padding: 0.5rem;
+  border-radius: 2rem;
+}
+
+.skills {
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.card {
+  display:flex;
+  background: linear-gradient(
+    to left top,
+    rgba(255, 255, 255, 0.2),
+    rgba(255, 255, 255, 0.3)
+  );
+  border-radius: 2rem;
+  margin: 1.5rem 2rem;
+  padding: 1rem;
+  box-shadow: 6px 6px 20px rgba(122, 122, 122, 0.212);
+  /* justify-content: space-between; */
+}
+
+.card img {
+  margin-right: 10%;
+  width: 20%;
+}
+
+.card-info {
+  display:flex;
+  align-content:center;
+  /* align-items: flex-start; */
+  flex-direction: column;
+  /* justify-content: space-between; */
+}
+
+.java-card {
+  display:flex;
+  background: linear-gradient(
+    to left top,
+    rgba(255, 255, 255, 0.2),
+    rgba(255, 255, 255, 0.3)
+  );
+  border-radius: 2rem;
+  margin: 1.5rem 2rem;
+  padding: 1rem;
+  box-shadow: 6px 6px 20px rgba(122, 122, 122, 0.212);
+  /* justify-content: space-between; */
+}
+
+.java-card img {
+  margin-right: 10%;
+  width: 20%;
+  height: 0%;
+}
+
+.blender-card {
+  display:flex;
+  background: linear-gradient(
+    to left top,
+    rgba(255, 255, 255, 0.2),
+    rgba(255, 255, 255, 0.3)
+  );
+  border-radius: 2rem;
+  margin: 1.5rem 2rem;
+  padding: 1rem;
+  height: 13%;
+  box-shadow: 6px 6px 20px rgba(122, 122, 122, 0.212);
+  /* justify-content: space-between; */
+}
+
+.blender-card img {
+  margin-right: 10%;
+  width: 20%;
+}
+
+.progress-1 {
+  background: linear-gradient(to right top, #FF5F6D, #FFC371);
+  width: 100%;
+  height: 8%;
+  margin-top: 10%;
+  border-radius: 1rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.progress-1::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: rgb(236, 236, 236);
+  position: absolute;
+  left: 85%;
+}
+
+.progress-2 {
+  background: linear-gradient(to right top, #FF5F6D, #FFC371);
+  margin-top: 10%;
+  width: 100%;
+  height: 7%;
+  border-radius: 1rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.progress-2::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: rgb(236, 236, 236);
+  position: absolute;
+  left: 70%;
+}
+
+.progress-3 {
+  background: linear-gradient(to right top, #FF5F6D, #FFC371);
+  width: 100%;
+  height: 10%;
+  margin-top: 10%;
+  border-radius: 1rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.progress-3::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: rgb(236, 236, 236);
+  position: absolute;
+  left: 90%;
+}
+
+.progress-4 {
+  background: linear-gradient(to right top, #FF5F6D, #FFC371);
+  width: 100%;
+  height: 10%;
+  margin-top: 10%;
+  border-radius: 1rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.progress-4::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: rgb(236, 236, 236);
+  position: absolute;
+  left: 80%;
+}
+
+.progress-5 {
+  background: linear-gradient(to right top, #FF5F6D, #FFC371);
+  width: 100%;
+  height: 10%;
+  margin-top: 10%;
+  border-radius: 1rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.progress-5::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: rgb(236, 236, 236);
+  position: absolute;
+  left: 80%;
+}
+
+.progress-6 {
+  background: linear-gradient(to right top, #FF5F6D, #FFC371);
+  width: 100%;
+  height: 10%;
+  margin-top: 10%;
+  border-radius: 1rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.progress-6::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: rgb(236, 236, 236);
+  position: absolute;
+  left: 90%;
+}
